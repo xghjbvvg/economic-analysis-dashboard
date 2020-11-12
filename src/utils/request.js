@@ -50,7 +50,7 @@ service.interceptors.response.use(
         });
         return Promise.reject("error");
       }
-      return res.data.data;
+      return JSON.parse(res.data.data);
     }
   },
   error => {

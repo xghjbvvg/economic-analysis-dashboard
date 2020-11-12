@@ -1,13 +1,20 @@
 <template>
-  <div style="display:flex;justify-content: center">
-    <div id="shangHaiChart" :style="{width: '1200px', height: '500px'}"></div>
+  <div>
+    <el-row type="flex">
+      <div id="shangHaiChart" :style="{width: '1500px', height: '600px'}"></div>
+    </el-row>
+
+    <el-row type="flex">
+      <div id="shenZhengChart" :style="{width: '1500px', height: '600px'}"></div>
+    </el-row>
+
   </div>
 </template>
 
 <script>
 
 
-import {shangStockExchange} from "@/api/home/home";
+import {shangStockExchange,shengStockExchange} from "@/api/home/home";
 
 export default {
   data() {
@@ -24,7 +31,20 @@ export default {
               .then(result => {
 
                 console.log(result)
-                shangHaiChart.setOption(JSON.parse(result));
+                shangHaiChart.setOption(result);
+              })
+              .catch(() => {});
+
+    },
+    drawShengStockExchange(){
+      // 基于准备好的dom，初始化echarts实例
+      let shenZhengChart = this.$echarts.init(document.getElementById('shenZhengChart'));
+
+      shengStockExchange()
+              .then(result => {
+
+                console.log(result)
+                shenZhengChart.setOption(result);
               })
               .catch(() => {});
 
@@ -32,6 +52,7 @@ export default {
   },
   mounted: function() {
     this.drawShangStockExchange();
+    this.drawShengStockExchange();
   }
 };
 </script>
