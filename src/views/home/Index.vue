@@ -14,7 +14,7 @@
 <script>
 
 
-import {shangStockExchange,shengStockExchange} from "@/api/home/home";
+import {homeSevice} from "@/api/home/home";
 
 export default {
   data() {
@@ -27,7 +27,7 @@ export default {
       // 基于准备好的dom，初始化echarts实例
       let shangHaiChart = this.$echarts.init(document.getElementById('shangHaiChart'));
 
-      shangStockExchange()
+      homeSevice.shangStockExchange()
               .then(result => {
 
                 console.log(result)
@@ -40,7 +40,7 @@ export default {
       // 基于准备好的dom，初始化echarts实例
       let shenZhengChart = this.$echarts.init(document.getElementById('shenZhengChart'));
 
-      shengStockExchange()
+      homeSevice.shengStockExchange()
               .then(result => {
 
                 console.log(result)
@@ -48,11 +48,21 @@ export default {
               })
               .catch(() => {});
 
+    },
+    updateAhDict(){
+      homeSevice.updateAhDict()
+              .then(() => {
+
+              })
+              .catch(() => {});
     }
+
+
   },
   mounted: function() {
     this.drawShangStockExchange();
     this.drawShengStockExchange();
+    this.updateAhDict();
   }
 };
 </script>

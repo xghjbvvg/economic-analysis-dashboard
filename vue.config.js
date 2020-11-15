@@ -19,6 +19,7 @@ module.exports = {
           '^/api': '',// 替换成target中的地址
         }
       }
-    }
+    },
+    disableHostCheck: true
   }
 };

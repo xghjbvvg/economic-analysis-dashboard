@@ -13,5 +13,8 @@ module.exports = {
     alias: {
       "@": resolve("src")
     }
+  },
+  devServer: {
+    disableHostCheck: true,
   }
 };
