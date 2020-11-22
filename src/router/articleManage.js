@@ -1,21 +1,21 @@
 import Layout from "@/views/layout/App.vue";
 export default {
-  path: "/article_manage",
+  path: "/stock_account",
   component: Layout,
-  name: "ArticleManage",
-  redirect: "/article_manage/list",
+  name: "StockAccountDetail",
+  redirect: "/stock_account/detail",
   meta: {
-    title: "文章管理"
+    title: "股票用户"
   },
   children: [
     {
-      path: "list",
-      name: "ArticleManageList",
+      path: "detail",
+      name: "StockAccountDetail",
       meta: {
-        title: "文章列表"
+        title: "股票用户统计"
       },
       component: resolve =>
-        require(["@/views/articleManage/articleList/Index.vue"], resolve)
+        require(["@/views/stockAccount/detail.vue"], resolve)
     }
   ]
 };

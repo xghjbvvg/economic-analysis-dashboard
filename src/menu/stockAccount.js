@@ -1,17 +1,17 @@
 export default {
-  name: "文章管理",
+  name: "股票用户",
   permissionsKey: "",
   icon: "fa fa-envelope-open",
   children: {
     courseCardList: {
-      name: "文章列表",
+      name: "股票账户统计",
       permissionsKey: "",
-      path: "/article_manage/list"
+      path: "/stock_account/detail"
     },
-    organCardList: {
+    /*organCardList: {
       name: "文章分类",
       permissionsKey: "",
-      path: "/articleManage/category"
-    }
+      path: "/stockAccount/category"
+    }*/
   }
 };
