@@ -3,15 +3,15 @@ export default {
   permissionsKey: "",
   icon: "fa fa-envelope-open",
   children: {
-    courseCardList: {
+    stockAccountDetail: {
       name: "股票账户统计",
       permissionsKey: "",
       path: "/stock_account/detail"
     },
-    /*organCardList: {
-      name: "文章分类",
+    analystRank: {
+      name: "分析师指数最新排行",
       permissionsKey: "",
-      path: "/stockAccount/category"
-    }*/
+      path: "/stock_account/analyst_rank"
+    },
   }
 };

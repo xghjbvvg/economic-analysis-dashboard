@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Layout from "@/views/layout/App.vue";
-import ArticleManage from "./articleManage";
+import StockAccount from "./stockAccount";
 
 Vue.use(VueRouter);
 
@@ -25,7 +25,7 @@ const routes = [
       }
     ]
   },
-  ArticleManage,
+  StockAccount,
   {
     path: "/login",
     name: "Login",

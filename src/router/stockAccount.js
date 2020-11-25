@@ -16,6 +16,15 @@ export default {
       },
       component: resolve =>
         require(["@/views/stockAccount/detail.vue"], resolve)
-    }
+    },
+    {
+      path: "analyst_rank",
+      name: "analystRank",
+      meta: {
+        title: "分析师排名"
+      },
+      component: resolve =>
+          require(["@/views/stockAccount/analystRank.vue"], resolve)
+    },
   ]
 };
