@@ -8,13 +8,13 @@
 
 ## view 组件页面
 
-### home 首页，显示上交所与深交所总貌
+### * home 首页，显示上交所与深交所总貌
 
-### stockAccount 分析师详情
+### * stockAccount 分析师详情
 
-### layout 布局
+### * layout 布局
 
-### login 模拟登入
+### * login 模拟登入
 
 
 
