@@ -8,7 +8,13 @@
 
 
 
+# home 首页，显示上交所与深交所总貌
 
+# stockAccount 分析师详情
+
+# layout 布局
+
+# login 模拟登入
 
 
 
@@ -35,7 +41,7 @@
 151.101.184.133    avatars6.githubusercontent.com
 151.101.184.133    avatars7.githubusercontent.com
 151.101.184.133    avatars8.githubusercontent.com
- ```
  # GitHub End
+ ```
 
 
