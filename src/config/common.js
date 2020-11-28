@@ -1,6 +1,6 @@
 export default {
   version: 0.1,
-  timeout: 60000,
+  timeout: 600000,
   apiPrefix: "",
   requestRetry: 4,
   requestRetryDelay: 800,

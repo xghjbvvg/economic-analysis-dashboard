@@ -26,5 +26,14 @@ export default {
       component: resolve =>
           require(["@/views/stockAccount/analystRank.vue"], resolve)
     },
+    {
+      path: "analyst_info/:code",
+      name: "analystInfo",
+      meta: {
+        title: "分析师详情"
+      },
+      component: resolve =>
+          require(["@/views/stockAccount/analystInfo.vue"], resolve)
+    },
   ]
 };

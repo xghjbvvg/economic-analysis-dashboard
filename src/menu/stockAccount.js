@@ -11,7 +11,8 @@ export default {
     analystRank: {
       name: "分析师指数最新排行",
       permissionsKey: "",
-      path: "/stock_account/analyst_rank"
+      path: "/stock_account/analyst_rank",
+
     },
   }
 };
